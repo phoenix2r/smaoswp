@@ -61,7 +61,7 @@
 
       <!-- Social Feed -->
       <div class="card card-social-feed">
-        <div class="title">SOCIAL FEED</div>
+        <div class="title">HELLO WORLD</div>
         <div class="card-body">
           <div class="card-image"><?php echo do_shortcode('[fts_facebook type=page id=1617287108492220 access_token=EAAP9hArvboQBAAWHnDFOb9bTDMvdVx3TjsGEotrRznQ2fX2Ucbg566LlAKov41gRuK4GQH7b77rZBXFPyieC7rhhPZAwgqjkuH3JR3jNAY7uzGLSEo6vZAQYR8KwMHbYA7EEqR5sOmz3E64FfyZBKcZAfYiElpn8bZCDH1SgCb4QZDZD posts=6 description=yes posts_displayed=page_only]'); ?></div>
         </div>
