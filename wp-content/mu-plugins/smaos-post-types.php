@@ -80,6 +80,21 @@ function smaos_post_types() {
     'menu_icon' => 'dashicons-buddicons-buddypress-logo'
   ));
 
+  //Members Type
+  register_post_type('member', array(
+    'supports' => array('title', 'editor', 'thumbnail'),
+    'rewrite' => array('slug' => 'members'),
+    'public' => true,
+    'labels' => array(
+      'name' => 'Members',
+      'add_new_item' => 'Add New Info for Members',
+      'edit_item' => 'Edit Info for Members',
+      'all_items' => 'All Info for Members',
+      'singular_name' => 'Member Info'
+    ),
+    'menu_icon' => 'dashicons-vault'
+  ));
+
 }
 
 add_action('init', 'smaos_post_types');
