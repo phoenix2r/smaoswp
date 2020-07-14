@@ -21,7 +21,7 @@ function smaos_post_types() {
   // Past Show Post Type
   register_post_type('pastShow', array(
     'supports' => array('title', 'editor', 'thumbnail'),
-    'rewrite' => array('slug' => 'about-us/past-shows'),
+    'rewrite' => array('slug' => 'about/past-shows'),
     'has_archive' => true,
     'public' => true,
     'labels' => array(
@@ -34,18 +34,18 @@ function smaos_post_types() {
     'menu_icon' => 'dashicons-store'
   ));
 
-  // Smaosinfo Post Type
-  register_post_type('smaosinfo', array(
+  // About Us Post Type
+  register_post_type('about', array(
     'supports' => array('title', 'editor'),
-    'rewrite' => array('slug' => 'about-us'),
+    'rewrite' => array('slug' => 'about'),
     'has_archive' => true,
     'public' => true,
     'labels' => array(
-      'name' => 'Smaos Info',
-      'add_new_item' => 'Add New Smaos Info',
-      'edit_item' => 'Edit Smaos Info',
-      'all_items' => 'All Smaos Info',
-      'singular_name' => 'Smaosinfo'
+      'name' => 'About Us',
+      'add_new_item' => 'Add About Us Info',
+      'edit_item' => 'Edit About Us Info',
+      'all_items' => 'All About Us Info',
+      'singular_name' => 'About Us Info'
     ),
     'menu_icon' => 'dashicons-universal-access-alt'
   ));

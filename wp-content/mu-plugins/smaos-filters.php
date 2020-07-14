@@ -13,7 +13,12 @@ function upcoming_shows_filter($items, $menu, $args) {
 
   if($parent_item_id > 0) {
 
-    foreach (get_posts('post_type=show&numberposts=-1') as $post) {
+    $args = array(
+      'post_type' => 'show',
+      'numberposts' => -1
+    );
+
+    foreach (get_posts($args) as $post) {
       $post->menu_item_parent = $parent_item_id;
       $post->post_type = 'nav_menu_item';
       $post->object = 'custom';
@@ -21,9 +26,7 @@ function upcoming_shows_filter($items, $menu, $args) {
       $post->menu_order = ++$menu_order;
       $post->title = $post->post_title;
       $post->url = get_permalink( $post->ID );
-      if (array_search(!$post->title, $child_items)) {
-          array_push($child_items, $post);
-      }
+      array_push($child_items, $post);
     }
 
   }

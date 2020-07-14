@@ -17,14 +17,14 @@ while(have_posts()) {
     </div>
     <div class="card-body">
       <div class="card-description"><?php the_content(); ?></div>
-      <div class="btn-secondary">
+      <!-- <div class="btn-secondary">
         <?php 
         $file = get_field('download');
         if($file) { ?>
         <a href="<?php echo $file['url'] ?>"><?php echo $file['filename'] ?></a>
         <?php }
         ?>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
