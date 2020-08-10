@@ -5,7 +5,7 @@ Version: 1.0
 */
 @font-face {
   font-family: 'wandery_freeregular';
-  src: url("https://home3/ichardy4/public_html/smaosdemo/wp-content/themes/SMAOStheme/fonts/Wandery.otf"), url("https://home3/ichardy4/public_html/smaosdemo/wp-content/themes/SMAOStheme/fonts/Wandery.ttf");
+  src: url("public_html/smaosdemo/wp-content/themes/SMAOStheme/fonts/Wandery.otf"), url("public_html/smaosdemo/wp-content/themes/SMAOStheme/fonts/Wandery.ttf");
 }
 
 .btn-main, .btn-secondary {
