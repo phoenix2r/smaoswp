@@ -35,10 +35,10 @@ if (strstr($_SERVER['SERVER_NAME'], 'smaos.local')) {
 	define( 'DB_HOST', 'localhost' );
 } else {
 	/** The name of the database for WordPress */
-	define( 'DB_NAME', 'db3bvvg79snrbt' );
+	define( 'DB_NAME', 'ichardy4_smaostest' );
 
 	/** MySQL database username */
-	define( 'DB_USER', 'usnn43k5k726k' );
+	define( 'DB_USER', 'ichardy4_testuse' );
 	
 	/** MySQL database password */
 	define( 'DB_PASSWORD', 'Mikado1955' );
