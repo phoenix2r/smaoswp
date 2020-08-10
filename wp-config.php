@@ -35,16 +35,16 @@ if (strstr($_SERVER['SERVER_NAME'], 'smaos.local')) {
 	define( 'DB_HOST', 'localhost' );
 } else {
 	/** The name of the database for WordPress */
-	define( 'DB_NAME', 'ichardy4_WPD18' );
+	define('DB_NAME', 'ichardy4_WPFQ4');
 
 	/** MySQL database username */
-	define( 'DB_USER', 'ichardy4_WPD18' );
-	
+	define('DB_USER', 'ichardy4_WPFQ4');
+
 	/** MySQL database password */
-	define( 'DB_PASSWORD', 'Mikado1955' );
-	
+	define('DB_PASSWORD', 'K3KZ=c=)o_2o8ZDq4');
+
 	/** MySQL hostname */
-	define( 'DB_HOST', 'localhost' );
+	define('DB_HOST', 'localhost');
 }
 
 
