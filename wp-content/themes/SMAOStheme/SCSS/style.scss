@@ -1,0 +1,35 @@
+/* 
+Theme Name: SMAOS Theme
+Author: Richard Ross
+Version: 1.0
+*/
+
+@import 'config';
+@import 'utilities';
+@import 'cards';
+@import 'navbar';
+@import 'hero-showcase';
+@import 'front-page';
+@import 'partners';
+@import 'footer';
+@import 'show';
+@import 'single';
+@import 'archive';
+@import 'mc';
+@import 'woocommerce';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Main styling
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(-25deg, rgba(87, 87, 87, 1) 20%, rgba(255, 255, 255, 1) 75%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+

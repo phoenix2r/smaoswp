@@ -1,0 +1,6 @@
+2020-08-06T13:49:15+00:00 CRITICAL Cannot redeclare WC() (previously declared in /Users/richardross/Library/Mobile Documents/com~apple~CloudDocs/RTWRK/SMAOS/SMAOS WP/app/public/wp-content/plugins/woocommerce/woocommerce.php:43) in /Users/richardross/Library/Mobile Documents/com~apple~CloudDocs/RTWRK/SMAOS/SMAOS WP/app/public/wp-content/plugins/woocommerce/woocommerce 2.php on line 43
+
+2020-08-06T13:49:16+00:00 CRITICAL Cannot redeclare WC() (previously declared in /Users/richardross/Library/Mobile Documents/com~apple~CloudDocs/RTWRK/SMAOS/SMAOS WP/app/public/wp-content/plugins/woocommerce/woocommerce.php:43) in /Users/richardross/Library/Mobile Documents/com~apple~CloudDocs/RTWRK/SMAOS/SMAOS WP/app/public/wp-content/plugins/woocommerce/woocommerce 2.php on line 43
+
+2020-08-06T13:49:16+00:00 CRITICAL Cannot redeclare WC() (previously declared in /Users/richardross/Library/Mobile Documents/com~apple~CloudDocs/RTWRK/SMAOS/SMAOS WP/app/public/wp-content/plugins/woocommerce/woocommerce.php:43) in /Users/richardross/Library/Mobile Documents/com~apple~CloudDocs/RTWRK/SMAOS/SMAOS WP/app/public/wp-content/plugins/woocommerce/woocommerce 2.php on line 43
+

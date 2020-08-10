@@ -1,0 +1,48 @@
+// Cards
+
+.card {
+  max-width: $max-width;
+  margin: auto;
+  background: $box-color;
+  color: $text-color;
+  padding: 1rem;
+  box-shadow: 10px 10px 8px #4d4d4d;
+}
+
+.card .card-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+}
+
+.card-header .card-title {
+  grid-column: 1;
+  font-size: 2rem;
+  text-align: right;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid $text-color;
+}
+
+.card-header .tagline {
+  grid-column: 1;
+  font-size: 1.25rem;
+  font-weight: lighter;
+}
+
+@media(max-width: $tablet) {
+  .card {
+    max-width: $max-width-tablet;
+
+    .card-header {
+      grid-template-columns: 1fr;
+  
+      .card-title {
+        font-size: 1.5rem;
+      }
+      .tagline {
+        font-size: 0.75rem;
+      }
+    }
+  }
+  
+}

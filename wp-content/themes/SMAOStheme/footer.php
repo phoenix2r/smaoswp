@@ -68,7 +68,12 @@
           )); 
           ?> 
         </div>
+        
         <div id="footer-logo">
+          <div class="charity">
+            <p>Copyright 2020 | South Manchester AOS</p>
+            <P>Registered Charity in England & Wales |  1162025</P>
+          </div>
           <img src="<?php echo get_theme_file_uri('/imgs/SMAOSlogo-white.png') ?>" alt="">
         </div>
 

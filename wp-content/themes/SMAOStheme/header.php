@@ -28,16 +28,11 @@
 
   <!-- Navbar -->
   <div id="navbar">
-    <?php wp_nav_menu(array(
+    <?php
+    
+    wp_nav_menu(array(
       'theme_location' => 'mainMenu'
     )); ?>
-    <!-- <ul id="nav-buttons">
-      <li><a href="home">HOME</a></li>
-      <li><a href="whatson">WHAT'S ON</a></li>
-      <li><a href="about">ABOUT US</a></li>
-      <li><a href="join">JOIN US</a></li>
-      <li><a href="members">MEMBERS</a></li>
-    </ul> -->
   </div>
 
   </header>  

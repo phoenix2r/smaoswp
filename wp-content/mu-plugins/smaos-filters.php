@@ -31,7 +31,7 @@ function upcoming_shows_filter($items, $menu, $args) {
 
   }
 
-  return array_merge($items, $child_items);
+  return array_merge($items, array_reverse($child_items));
 
 }
 

@@ -5,15 +5,35 @@ while(have_posts()) {
 }
 ?>
 
-<div class="container">
+<div class="card">
+    
+    <div class="card-header">
+      <div class="card-title">
+        <?php the_title(); ?>
+      </div>
+      <div class="card-tagline">
+        <?php echo get_field('tagline'); ?>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-description"><?php the_content(); ?></div>
+      
+      <?php 
+      $file = get_field('download');
+      if($file) { ?>
+      <div id="single-download">
+        <a class="btn-secondary" href="<?php echo $file['url'] ?>"><?php echo $file['filename'] ?></a>
+      </div>
+      <?php }
 
-  <div class="page-title"><?php the_title(); ?></div>
-
-  <div class="page-body">
-    <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium voluptatibus quibusdam, dolor, ea architecto placeat veritatis fuga quos amet rem unde distinctio veniam ducimus, quisquam praesentium temporibus labore possimus magni ipsum adipisci sint maxime debitis. Necessitatibus doloribus officia tenetur, eos molestiae nulla accusamus unde sequi nisi quidem delectus, cupiditate consequatur!</p> -->
-    <?php the_content(); ?>
+      $btnLink = get_field('card_button_link');
+      if($btnLink) { ?>
+      <div id="single-btn">
+        <a class="btn-<?php echo get_field('card_button_style') ?>" href="<?php echo get_field('card_button_link') ?>"><?php echo get_field('card_button_title') ?></a>
+      </div>
+      <?php } ?>
+      
+    </div>
   </div>
-
-</div>
 
 <?php get_footer(); ?>

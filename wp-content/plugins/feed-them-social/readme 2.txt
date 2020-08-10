@@ -3,7 +3,7 @@ Contributors: slickremix, slickchris
 Tags: Facebook, Instagram, Twitter, YouTube, Feed
 Requires at least: 3.6.0
 Tested up to: 5.4.2
-Stable tag: 2.8.4
+Stable tag: 2.8.6
 License: GPLv2 or later
 
 Display a Custom Facebook feed, Instagram feed, Twitter feed, Pinterest feed & YouTube feed on pages, posts or widgets.
@@ -75,6 +75,21 @@ Feed Them Social was Developed By SlickRemix --> [https://www.slickremix.com/](h
   * Log into WordPress dashboard then click **Plugins** > **Add new** > Then under the title "Install Plugins" click **Upload** > **choose the zip** > **Activate the plugin!**
 
 == Changelog ==
+= Version 2.8.6 Thursday, July 23rd, 2020 =
+  * NEW: Facebook Feed: All target="_blank" a tag elements now have rel="noreferrer" for better SEO results.
+  * NEW: Facebook Options: Option to change the main page title htag (h1-h6) and font size.
+  * REMOVE: G+ from the share options since the Google Plus social network has been shutdown.
+  * REMOVE: Facebook Albums Feed: Date the Album was created.
+  * PREMIUM NEW: Facebook Albums: Now you can see 25 photos per album using the popup option. On the 25th photo a link will appear to see the rest of the Album on Facebook.
+  * PREMIUM FIX: Facebook Photo & Album Feed: The popup description was missing link and tag conversions to clickable links.
+  * PREMIUM FIX: Add h6 in the list of tags to avoid appending the ellipsis. This works when using the words=45 shortcode option.
+  * FACEBOOK REVIEWS FIX: If no profile photo set on Facebook use our default fts icon so the profile image does not appear broken.
+
+= Version 2.8.5 Friday, June 26th, 2020 =
+  * NEW: Works with WordPress 5.4.2
+  * FTS BAR EXTENSION NEW: Instagram: Now includes, Basic, Business and Hashtag Feed options.
+  * FTS BAR EXTENSION NEW: Option to display FTS bar on a specific page ID.
+
 = Version 2.8.4 Friday, June 19th, 2020 =
   * FIX: Custom CSS Option: Replace wp_enqueue_scripts with wp_print_styles.
   * FIX: Facebook Albums Feed: The main photos are now appearing for album feeds again.

@@ -1,0 +1,40 @@
+// Single post styling
+#single-main-content {
+  max-width: $max-width;
+  margin: auto;
+  // padding: 0 10rem;
+}
+
+#single-main-content .card {
+  padding-bottom: 1rem;
+}
+
+#single-main-content .card-title {
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#single-main-content .card-tagline {
+  grid-column: 1;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+}
+
+#single-main-content .card-body {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem;
+}
+
+#single-download, #single-btn {
+  padding: 2rem;
+  display: block;
+  justify-content: center;
+}
+
+@media(max-width: $tablet) {
+  #single-main-content {
+    max-width: $max-width-tablet;
+  }
+}

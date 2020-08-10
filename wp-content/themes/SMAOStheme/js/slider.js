@@ -1,5 +1,6 @@
 let sliderImages = document.querySelectorAll('.slide'),
     slideContainer = document.querySelector('#hero-slider'),
+    slideOneImage = document.querySelectorAll('.hero-img'),
     arrowLeft = document.querySelector('#arrow-left'),
     arrowRight = document.querySelector('#arrow-right'),
     slideInterval;
@@ -9,19 +10,31 @@ const intervalTime = 5000;
 
 // function to adjust the height of the container dynamically
 function resizeElementHeight(element) {
-  var height = 0;
-  var body = window.document.body;
-  if (window.innerHeight) {
-      height = window.innerHeight;
-  } else if (body.parentElement.clientHeight) {
-      height = body.parentElement.clientHeight;
-  } else if (body && body.clientHeight) {
-      height = body.clientHeight;
+  var flexHeight = slideOneImage[0].offsetHeight;
+  var increaseHeightLarge = flexHeight * 0.2;
+  var increaseHeightSmall = flexHeight * 0.3;
+  var increaseHeightMobile = flexHeight * 0.4;
+  // var height = 0;
+  // var body = window.document.body;
+  // if (window.innerHeight) {
+  //     height = window.innerHeight;
+  // } else if (body.parentElement.clientHeight) {
+  //     height = body.parentElement.clientHeight;
+  // } else if (body && body.clientHeight) {
+  //     height = body.clientHeight;
+  // }
+  // element.style.height = ((height - element.offsetTop) + "px");
+  if (window.innerWidth < 500) {
+    slideContainer.style.height = ((flexHeight + increaseHeightMobile) + "px");
+  } else if (window.innerWidth < 900) {
+    slideContainer.style.height = ((flexHeight + increaseHeightSmall) + "px");
+  } else {
+    slideContainer.style.height = ((flexHeight + increaseHeightLarge) + "px");
   }
-  element.style.height = ((height - element.offsetTop) + "px");
 }
 
-resizeElementHeight(slideContainer);
+resizeElementHeight();
+window.addEventListener('resize', resizeElementHeight);
 
 function startSlide() {
   // reset();

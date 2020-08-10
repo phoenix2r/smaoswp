@@ -1,0 +1,77 @@
+// Footer - bottom strip
+.black-strip {
+  // max-height: 200px;
+  padding: 1rem;
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.black-strip .footer-menu {
+  width: 50%;
+  font-size: .8rem;
+
+  #menu-footer-menu {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(219, 193, 47);
+  }
+
+  ul li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: .2rem;
+  }
+
+  .sub-menu {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      color: $text-color;
+    }
+  }
+}
+
+.black-strip #footer-logo {
+  max-width: 500px;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: $text-color;
+
+  .charity {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media(max-width: 1031px) {
+  .black-strip #footer-logo {
+    align-items: center;
+
+    .charity {
+      align-items: center;
+    }
+  }
+}

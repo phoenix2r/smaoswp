@@ -1,0 +1,131 @@
+// Navbar & Header
+#main-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+
+  .grid-container {
+    max-width: $max-width;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr .5fr 1.5fr;
+  }
+}
+
+#header-logo {
+  grid-column: 1 / span 2;
+  margin-left: 1rem;
+  display: flex;
+}
+
+#header-logo > img {
+  max-width: 100%;
+  align-self: center;
+}
+
+#tagline {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+#tagline-btns {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+#tagline-btns a {
+  padding: 0.5rem 2rem;
+  margin: 0 1rem 0 1rem
+}
+
+.tagline-text {
+  font-family: 'wandery_freeregular', sans-serif;
+  font-size: 1.75vw;
+  text-align: right;
+  padding: .5rem 1rem 0 0;
+}
+
+.tagline-text.est {
+  font-size: 1.25vw;
+}
+
+#navbar {
+  max-width: $max-width;
+  margin: auto;
+  padding: 1rem 2rem;
+}
+
+#navbar li {
+  position: relative;
+  padding: .5rem;
+}
+
+#navbar li:hover {
+  background: #ffffff;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+}
+
+#navbar ul ul {
+  display: none;
+  position: absolute;
+  top: 2em;
+  z-index: 100;
+  width: 180px;
+  background-color: transparent;
+  padding: 0;
+}
+
+#navbar ul ul li {
+  margin: .2rem 0;
+  padding: .5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#navbar a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+@media(max-width: $tablet) {
+  #main-header .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  #header-logo {
+    grid-column: 1;
+  }
+
+  #tagline-btns {
+    justify-content: center;
+
+    .btn-main {
+      font-size: 3vw;
+    }
+  }
+
+  .tagline-text {
+    text-align: center;
+    font-size: 4vw;
+  }
+
+  .tagline-text.est {
+    font-size: 3vw;
+  }
+}

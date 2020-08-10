@@ -1,0 +1,68 @@
+// Hero Showcase
+#hero-showcase .container {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  background: black;
+}
+
+#hero-showcase .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+#hero-showcase .slide.current {
+  opacity: 1;
+  z-index: 2;
+}
+
+#hero-showcase .hero-img {
+  width: 100%;
+}
+
+#hero-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $text-color;
+}
+
+#hero-footer a {
+  margin: auto;
+  font-size: 1.5vw;
+  width: 20%;
+}
+
+// Arrows
+#hero-showcase i {
+  color: $text-color;
+  cursor: pointer;
+  position: absolute;
+  top: 90%;
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+#arrow-left {
+  font-size: 2vw;
+  left: 0;
+  margin-left: 30px;
+  z-index: 10;
+}
+
+#arrow-right {
+  font-size: 2vw;
+  right: 0;
+  margin-right: 30px;
+  z-index: 11;
+}

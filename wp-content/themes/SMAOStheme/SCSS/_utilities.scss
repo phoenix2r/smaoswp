@@ -1,0 +1,54 @@
+// Utility Classes
+
+// Buttons
+%btn {
+  color: $text-color;
+  border-radius: 5px;
+  padding: 0.5rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-main {
+  @extend %btn;
+  font-size: 1.75vw;
+  width: 40%;
+  background-color: #A3A3A3;
+  border: #575757 solid 1px;
+  margin-left: 1rem;
+  // width: 200px;
+}
+
+.btn-secondary {
+  @extend %btn;
+  font-weight: bold;
+  background-color: black;
+  border: $text-color solid 1px;
+}
+
+// 'a' links
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+// Containers
+.container {
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+  align-items: center;
+}
+
+
+.page-title {
+  font-size: 2rem;
+  text-align: right;
+  color: var(--dark-color);
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--text-color);
+}

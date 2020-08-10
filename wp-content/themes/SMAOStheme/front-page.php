@@ -5,15 +5,11 @@
 
  <!-- The actual slider -->
     <div id="hero-slider" class="container">
-      <div><i id="arrow-left" class="fas fa-arrow-left fa-2x" href="#"></i></div>
-
-      <!-- wrap the slide to prevent sibling selection spilling over to the arrows -->
       <div class="slide-wrap">
         <?php 
           
           $today = date('d/m/Y');
           $homepageEvents = new WP_Query(array(
-            // 'posts_per_page' => 3,
             'post_type' => 'show',
             'meta_key' => 'end_date',
             'orderby' => 'meta_value_num',
@@ -38,7 +34,10 @@
             <!-- Individual slides -->
             <div class="slide">
               <!-- Hero image as slider -->
-              <img class="hero-img" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Up and coming show">
+              <div>
+                <img class="hero-img" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Up and coming show">
+              </div>
+              
 
               <!-- Hero showcase footer -->
               <div id="hero-footer">
@@ -49,8 +48,11 @@
 
           <?php } wp_reset_postdata(); ?>
       </div>
+      <div class="arrows">
+        <div><i id="arrow-left" class="fas fa-arrow-left" href="#"></i></div>
+        <div><i id="arrow-right" class="fas fa-arrow-right" href="#"></i></div>
+      </div>
       
-      <div><i id="arrow-right" class="fas fa-arrow-right fa-2x" href="#"></i></div>
     </div>
   </section>
 
@@ -62,9 +64,9 @@
       <!-- Social Feed -->
       <div class="card card-social-feed">
         <div class="title">SOCIAL FEED</div>
-        <div class="card-body">
-          <div class="card-image"><?php echo do_shortcode('[fts_facebook type=page id=1617287108492220 access_token=EAAP9hArvboQBAAWHnDFOb9bTDMvdVx3TjsGEotrRznQ2fX2Ucbg566LlAKov41gRuK4GQH7b77rZBXFPyieC7rhhPZAwgqjkuH3JR3jNAY7uzGLSEo6vZAQYR8KwMHbYA7EEqR5sOmz3E64FfyZBKcZAfYiElpn8bZCDH1SgCb4QZDZD posts=6 description=yes posts_displayed=page_only]'); ?></div>
-        </div>
+        
+        <div class="card-image"><?php echo do_shortcode('[fts_facebook type=page id=1617287108492220 access_token=EAAP9hArvboQBAAWHnDFOb9bTDMvdVx3TjsGEotrRznQ2fX2Ucbg566LlAKov41gRuK4GQH7b77rZBXFPyieC7rhhPZAwgqjkuH3JR3jNAY7uzGLSEo6vZAQYR8KwMHbYA7EEqR5sOmz3E64FfyZBKcZAfYiElpn8bZCDH1SgCb4QZDZD posts=6 description=yes posts_displayed=page_only]'); ?></div>
+        
         <div class="card-icons">
           <div class="icon"><a href="#"><i class="fab fa-facebook fa-4x"></i></a></div>
           <div class="icon"><a href="#"><i class="fab fa-twitter fa-4x"></i></a></div>

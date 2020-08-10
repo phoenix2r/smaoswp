@@ -1,0 +1,41 @@
+// Archive styling
+#past-shows {
+  width: $max-width;
+  margin: auto;
+  // padding: 0 10rem;
+}
+
+#past-shows .card .card-body {
+  height: 500px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.archive-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 1rem;
+  width: 100%;
+}
+
+.archive-item .archive-item-title {
+  font-size: 1.75rem;
+  text-align: right;
+  color: $text-color;
+}
+
+.archive-item .archive-item-body {
+  font-size: 1rem;
+  align-self: center;
+  margin: 0 1rem;
+  color: $text-color;
+}
+
+@media(max-width: $mobile) {
+  .archive-item .archive-item-title {
+    text-align: left;
+  }
+}

@@ -1,0 +1,112 @@
+// Styling for show posts
+.theatre-show {
+  width: $max-width;
+  margin: auto;
+}
+
+.theatre-show img{
+  max-width: 100%;
+  height: auto;
+}
+
+.theatre-show .show-header,
+.theatre-show .show-body {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 1rem;
+}
+
+.show-header .headline {
+  grid-column: 1 / span 3;
+  font-size: 2.5rem;
+  text-align: right;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid $text-color;
+}
+
+.show-header .tagline {
+  grid-column: 1 / span 3;
+  font-size: 1.75rem;
+  font-weight: lighter;
+  padding-top: 1rem;
+}
+
+.theatre-show .show-body {
+  padding-top: 0;
+}
+
+.show-body .show-description {
+  grid-column: 1 / span 4;
+  font-weight: lighter;
+}
+
+.show-body .show-review {
+  grid-column: 1 / span 3;
+  font-weight: lighter;
+}
+
+.show-body #pinterest-gallery {
+  grid-column: 4 /span 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: $text-color;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.show-body #pinterest-gallery p {
+  margin: 1rem;
+  color: $dark-color;
+}
+
+span[class*="_hd"],
+span[class*="_ft"] {
+  display: none !important;
+}
+
+#show-btns {
+  grid-column: 5 /span 2;
+  justify-self: bottom;
+  align-self: center;
+  margin: auto;
+}
+
+#show-btns .btn-secondary {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+@media(max-width: $tablet) {
+  .theatre-show {
+    .show-header {
+      grid-template-columns: repeat(1, 1fr);
+
+      .headline {
+        grid-column: 1 / span 1;
+        font-size: 1.75rem;
+        border-bottom: 2px solid $text-color;
+      }
+      .tagline {
+        grid-column: 1 / span 1;
+        font-size: 1rem;
+        font-weight: lighter;
+        padding-top: 0.5rem;
+      }
+    }
+
+    .show-body {
+      grid-template-columns: repeat(1, 1fr);
+
+      #show-btns {
+        grid-column: 1;
+        margin-top: 2rem;
+      }
+
+      #pinterest-gallery {
+        grid-column: 1;
+        padding: 0;
+      }
+    }
+  }
+}
