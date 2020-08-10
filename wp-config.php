@@ -21,31 +21,31 @@
 // ** MySQL settings - You can get this info from your web host ** //
 
 
-// if (strstr($_SERVER['SERVER_NAME'], 'smaos.local')) {
-// 	/** The name of the database for WordPress */
-// 	define( 'DB_NAME', 'local' );
-
-// 	/** MySQL database username */
-// 	define( 'DB_USER', 'root' );
-	
-// 	/** MySQL database password */
-// 	define( 'DB_PASSWORD', 'root' );
-	
-// 	/** MySQL hostname */
-// 	define( 'DB_HOST', 'localhost' );
-// } else {
+if (strstr($_SERVER['SERVER_NAME'], 'smaos.local')) {
 	/** The name of the database for WordPress */
-	define('DB_NAME', 'ichardy4_WPFQ4');
+	define( 'DB_NAME', 'local' );
 
 	/** MySQL database username */
-	define('DB_USER', 'ichardy4_WPFQ4');
-
+	define( 'DB_USER', 'root' );
+	
 	/** MySQL database password */
-	define('DB_PASSWORD', 'K3KZ=c=)o_2o8ZDq4');
-
+	define( 'DB_PASSWORD', 'root' );
+	
 	/** MySQL hostname */
-	define('DB_HOST', 'localhost');
-// }
+	define( 'DB_HOST', 'localhost' );
+} else {
+	/** The name of the database for WordPress */
+	define( 'DB_NAME', 'ichardy4_smaosdemo' );
+
+	/** MySQL database username */
+	define( 'DB_USER', 'ichardy4_smaos' );
+	
+	/** MySQL database password */
+	define( 'DB_PASSWORD', 'Mikado1955' );
+	
+	/** MySQL hostname */
+	define( 'DB_HOST', 'localhost' );
+}
 
 
 
