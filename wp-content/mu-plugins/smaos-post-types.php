@@ -19,7 +19,7 @@ function smaos_post_types() {
   ));
 
   // Past Show Post Type
-  register_post_type('pastShow', array(
+  register_post_type('pastshow', array(
     'supports' => array('title', 'editor', 'thumbnail'),
     'rewrite' => array('slug' => 'about/past-shows'),
     'has_archive' => true,
