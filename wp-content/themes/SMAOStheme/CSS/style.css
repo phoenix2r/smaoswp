@@ -83,7 +83,7 @@ a {
   font-weight: lighter;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .card {
     max-width: 90vw;
   }
@@ -201,7 +201,7 @@ a {
   color: #4d4d4d;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   #main-header .grid-container {
     grid-template-columns: 1fr;
   }
@@ -375,7 +375,7 @@ a {
   justify-content: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   #main-content .grid-container {
     grid-template-columns: 1fr;
   }
@@ -645,7 +645,7 @@ span[class*="_ft"] {
   font-size: 1.25rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .theatre-show .show-header {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -706,7 +706,7 @@ span[class*="_ft"] {
   justify-content: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   #single-main-content {
     max-width: 90vw;
   }
