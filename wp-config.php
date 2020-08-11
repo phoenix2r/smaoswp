@@ -44,7 +44,7 @@ if (strstr($_SERVER['SERVER_NAME'], 'smaos.local')) {
 	define( 'DB_PASSWORD', 'Mikado1955' );
 	
 	/** MySQL hostname */
-	define( 'DB_HOST', '162.241.225.228' );
+	define( 'DB_HOST', 'localhost' );
 }
 
 
