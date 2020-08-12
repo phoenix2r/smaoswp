@@ -1,5 +1,6 @@
 <?php 
 
+// theme style function
 function theme_files() {
   wp_enqueue_style('font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
   wp_enqueue_style('main_css', get_stylesheet_directory_uri().'/CSS/style.css');
@@ -7,6 +8,8 @@ function theme_files() {
 
 add_action('wp_enqueue_scripts', 'theme_files');
 
+
+// Theme feature functions
 function theme_features() {
   register_nav_menu('mainMenu', 'Main Menu');
   register_nav_menu('footerMenu', 'Footer Menu');
@@ -17,6 +20,14 @@ function theme_features() {
 }
 
 add_action('after_setup_theme', 'theme_features');
+
+function theme_header_metadata() {
+  ?>
+  <!-- list meta tags here -->
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+  <?php
+}
 
 // WooCommerce actions
 // WooCommerce items to remove
