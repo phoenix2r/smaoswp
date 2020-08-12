@@ -29,6 +29,8 @@ function theme_header_metadata() {
   <?php
 }
 
+add_action('wp_head', 'theme_header_metadata');
+
 // WooCommerce actions
 // WooCommerce items to remove
 remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
