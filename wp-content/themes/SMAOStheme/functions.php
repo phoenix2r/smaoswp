@@ -29,6 +29,16 @@ function theme_header_metadata() {
   <?php
 }
 
+// function smaos_shop_sidebar() {
+//   $args = array(
+//     'name' => 'SMAOS Shop Sidebar',
+//     'id' => 'smaos-shop-sidebar',
+//     'description' => 'sidebar for the SMAOS shop pages',
+//     'class' => '',
+//     'before_widget' => '<li id="%1$s" class="',
+//   )
+// }
+
 add_action('wp_head', 'theme_header_metadata');
 
 // WooCommerce actions

@@ -36,11 +36,11 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 #tagline-btns a {
-  padding: 0.5rem 2rem;
+  // padding: 0.5rem 2rem;
   margin: 0 1rem 0 1rem
 }
 
@@ -112,8 +112,16 @@
     grid-column: 1;
   }
 
+  #tagline {
+    margin-top: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   #tagline-btns {
     justify-content: center;
+    order: 2;
 
     .btn-main {
       font-size: 3vw;
@@ -122,10 +130,27 @@
 
   .tagline-text {
     text-align: center;
-    font-size: 4vw;
+    font-size: 3.5vw;
+    order: 1;
+    padding: 0.5rem;
+    display: inline-block;
   }
 
   .tagline-text.est {
-    font-size: 3vw;
+    font-size: 2.5vw;
+    order: 1;
+    display: inline-block;
+  }
+}
+
+@media(max-width: 550px) {
+  #navbar {
+    li {
+      padding: 0.2rem;
+    }
+    
+    a {
+      font-size: 0.75rem;
+    }
   }
 }
