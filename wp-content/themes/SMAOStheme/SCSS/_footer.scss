@@ -20,7 +20,7 @@
 
   a {
     text-decoration: none;
-    color: rgb(219, 193, 47);
+    color: $accent-color;
   }
 
   ul li {
@@ -40,6 +40,10 @@
 
     a {
       color: $text-color;
+
+      &:hover {
+        color: $accent-color;
+      }
     }
   }
 }

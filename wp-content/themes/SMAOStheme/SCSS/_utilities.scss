@@ -8,6 +8,8 @@
 
   &:hover {
     cursor: pointer;
+    border: $accent-color solid 1px;
+    color: $accent-color;
   }
 }
 

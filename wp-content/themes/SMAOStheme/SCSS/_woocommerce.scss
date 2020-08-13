@@ -99,10 +99,36 @@ a.btn-secondary {
 
   li {
     margin: 0 .5rem;
+    
+    a {
+      color: $text-color;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+
+    .current_page_item {
+      a {
+        color: $accent-color;
+        font-weight: bold;
+      }
+    }
   }
 
   h2 {
     display: none;
+  }
+
+  .categories {
+    display: none;
+  }
+}
+
+.woocommerce-product-gallery__image {
+  img {
+    width: 100%;
+    height: auto;
   }
 }
 
