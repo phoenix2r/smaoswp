@@ -662,6 +662,13 @@ a {
   }
 }
 
+@media (max-width: 900px) {
+  .footer-img {
+    height: 75px;
+    margin: 0.5rem;
+  }
+}
+
 .black-strip {
   padding: 1rem;
   background: black;

@@ -100,3 +100,10 @@
   }
 
 }
+
+@media(max-width: $tablet) {
+  .footer-img {
+    height: 75px;
+    margin: 0.5rem;
+  }
+}
