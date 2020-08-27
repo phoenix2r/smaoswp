@@ -5,6 +5,7 @@ let sliderImages = document.querySelectorAll('.slide'),
     arrowRight = document.querySelector('#arrow-right'),
     slideInterval;
 
+
 let auto = false;
 if(sliderImages.length > 1) {
   auto = true;
