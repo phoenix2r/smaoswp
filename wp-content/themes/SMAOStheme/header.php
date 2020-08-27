@@ -19,7 +19,7 @@
     <div id="tagline">
       <div id="tagline-btns">
         <a class="btn-main" href="/sign-up">SUBSCRIBE</a>
-        <a class="btn-main" href="https://donate.giveasyoulive.com/donate?cid=39261">DONATE</a>
+        <a class="btn-main" href="https://donate.giveasyoulive.com/donate?cid=39261" target="_blank">DONATE</a>
       </div>
       <p class="tagline-text">THEATRE. MADE IN MANCHESTER</p>
       <p class="tagline-text est">EST: 1955</p>

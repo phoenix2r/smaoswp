@@ -91,7 +91,7 @@
           <div class="card-image"><?php the_post_thumbnail('cardLandscape'); ?></div>
           <div class="card-text">
             <div class="info"><?php the_content(); ?></div>
-            <a class="btn-<?php echo get_field('card_button_style') ?>" href="<?php echo get_field('card_button_link') ?>"><?php echo get_field('card_button_title') ?></a>
+            <a class="btn-<?php echo get_field('card_button_style') ?>" href="<?php echo get_field('card_button_link') ?>" target="_blank"><?php echo get_field('card_button_title') ?></a>
           </div>
         <!-- </div> -->
       </div>

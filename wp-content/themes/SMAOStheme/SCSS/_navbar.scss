@@ -99,8 +99,11 @@
 }
 
 #navbar a {
+  display: block;
+  text-align: left;
   text-decoration: none;
   color: $dark-color;
+  width: 100%;
 }
 
 @media(max-width: $tablet) {

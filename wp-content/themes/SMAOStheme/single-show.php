@@ -24,7 +24,7 @@ while(have_posts()) {
         <?php the_content(); ?>
       </div>
       <div id="show-btns">
-        <a class="btn-secondary" href="<?php echo get_field('ticket_link') ?>">Buy Tickets</a>
+        <a class="btn-secondary" href="<?php echo get_field('ticket_link') ?>" target="_blank">Buy Tickets</a>
       </div>
     </div>
   </div>

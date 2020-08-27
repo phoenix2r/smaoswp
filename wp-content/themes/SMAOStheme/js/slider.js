@@ -5,7 +5,14 @@ let sliderImages = document.querySelectorAll('.slide'),
     arrowRight = document.querySelector('#arrow-right'),
     slideInterval;
 
-const auto = true;
+let auto = false;
+if(sliderImages.length > 1) {
+  auto = true;
+} else {
+  auto = false;
+  arrowLeft.style.display = "none";
+  arrowRight.style.display = "none";
+}
 const intervalTime = 5000;
 
 // function to adjust the height of the container dynamically
@@ -14,16 +21,7 @@ function resizeElementHeight(element) {
   var increaseHeightLarge = flexHeight * 0.2;
   var increaseHeightSmall = flexHeight * 0.3;
   var increaseHeightMobile = flexHeight * 0.4;
-  // var height = 0;
-  // var body = window.document.body;
-  // if (window.innerHeight) {
-  //     height = window.innerHeight;
-  // } else if (body.parentElement.clientHeight) {
-  //     height = body.parentElement.clientHeight;
-  // } else if (body && body.clientHeight) {
-  //     height = body.clientHeight;
-  // }
-  // element.style.height = ((height - element.offsetTop) + "px");
+
   if (window.innerWidth < 500) {
     slideContainer.style.height = ((flexHeight + increaseHeightMobile) + "px");
   } else if (window.innerWidth < 900) {
@@ -38,6 +36,7 @@ window.addEventListener('resize', resizeElementHeight);
 
 function startSlide() {
   // reset();
+  
   let currentSlide = sliderImages[0];
   currentSlide.classList.add('current');
 }
@@ -93,6 +92,10 @@ arrowRight.addEventListener('click', () => {
   }
   console.log("right arrow clicked");
 })
+
+function moreThanOne() {
+  
+}
 
 // Auto slide
 if (auto) {

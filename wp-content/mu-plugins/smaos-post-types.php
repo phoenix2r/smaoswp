@@ -2,14 +2,14 @@
 
 function smaos_post_types() {
 
-  // Show Post Type
+  // Show Post Type - NB will appear in dashboard as What's On
   register_post_type('show', array(
     'supports' => array('title', 'editor', 'thumbnail'),
     'rewrite' => array('slug' => 'shows'),
     'has_archive' => true,
     'public' => true,
     'labels' => array(
-      'name' => 'Shows',
+      'name' => "What's On",
       'add_new_item' => 'Add New Show',
       'edit_item' => 'Edit Show',
       'all_items' => 'All Shows',

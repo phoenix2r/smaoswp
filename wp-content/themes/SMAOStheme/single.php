@@ -29,7 +29,7 @@ while(have_posts()) {
       $btnLink = get_field('card_button_link');
       if($btnLink) { ?>
       <div id="single-btn">
-        <a class="btn-<?php echo get_field('card_button_style') ?>" href="<?php echo get_field('card_button_link') ?>"><?php echo get_field('card_button_title') ?></a>
+        <a class="btn-<?php echo get_field('card_button_style') ?>" href="<?php echo get_field('card_button_link') ?>" target="_blank"><?php echo get_field('card_button_title') ?></a>
       </div>
       <?php } ?>
       
