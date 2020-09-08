@@ -13,6 +13,7 @@ add_action('wp_enqueue_scripts', 'theme_files');
 function theme_features() {
   register_nav_menu('mainMenu', 'Main Menu');
   register_nav_menu('footerMenu', 'Footer Menu');
+  register_nav_menu('shopMenu', 'Shop Menu');
   add_theme_support('title-tag');
   add_theme_support('post-thumbnails');
   add_theme_support('woocommerce');
@@ -29,34 +30,35 @@ function theme_header_metadata() {
   <?php
 }
 
-// function smaos_shop_sidebar() {
-//   $args = array(
-//     'name' => 'SMAOS Shop Sidebar',
-//     'id' => 'smaos-shop-sidebar',
-//     'description' => 'sidebar for the SMAOS shop pages',
-//     'class' => '',
-//     'before_widget' => '<li id="%1$s" class="',
-//   )
-// }
-
 add_action('wp_head', 'theme_header_metadata');
 
 // WooCommerce actions
 // WooCommerce items to remove
+remove_action('woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+remove_action('woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
 remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
-
-// archive
-
-// product
-remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
-
-remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10);
-
-// WooCommerce Items to reorder
-
+remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
 
 // WooCommerce Items to add
 
+add_action('woocommerce_before_main_content', 'smaos_theme_wrapper_start', 10);
+add_action('woocommerce_after_main_content', 'smaos_theme_wrapper_end', 10);
+add_action('woocommerce_sidebar', 'smaos_shop_menu', 10);
+
+function smaos_theme_wrapper_start() {
+  echo '<section id="single-main-content">';
+}
+
+function smaos_theme_wrapper_end() {
+  echo '</section>';
+}
+
+function smaos_shop_menu() {
+  wp_nav_menu(array(
+    'theme_location' => 'shopMenu'
+  )); 
+}
 
 
 function js_files() {
